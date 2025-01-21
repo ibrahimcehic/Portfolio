@@ -1,15 +1,14 @@
-import {Component} from '@angular/core';
-import {ViewportScroller} from "@angular/common";
+import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
   imports: [],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent {
-
   constructor(private viewportScroller: ViewportScroller) {}
 
   scrollTo(section: string) {
@@ -17,7 +16,7 @@ export class ProfileComponent {
   }
 
   openResume() {
-    window.open("./assets/SebastianoFazzino.pdf");
+    window.open('./assets/CV-IbrahimCehic.pdf');
   }
 
   goToLinkedin() {
